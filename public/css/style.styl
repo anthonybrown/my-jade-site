@@ -1,0 +1,105 @@
+/*
+* Import nib
+*/
+@import 'nib'
+
+/*
+* Grab a custom font from Googlefonts
+*/
+@import url('http://fonts.googleapis.com/css?family=Quicksand')
+
+/*
+* Nib provides a css reset
+*/
+global-reset()
+
+/*
+* Store the main color and
+* background color as variables
+*/
+main-color = #fa5b4d
+background-color = #faf9f0
+
+body
+  font-family 'Georgia'
+  background-color = #faf9f0
+
+header.header
+  width 100%
+  background-color #8F8F8F
+  font-family 'Quicksand'
+  padding 50px 10px
+  font-size 25px
+  text-align center
+  margin 0 auto 5px
+  border-bottom 2px dashed #434b45
+  margin-bottom 7px
+
+  header h1
+  font-size:35px
+  color #f9f1f7
+  text-shadow 0px -1px 0px #174446
+
+.container
+  width 86%
+  margin 50px auto
+  overflow hidden
+
+.main-content
+  float left
+  width 65%
+
+  p
+    margin-bottom 20px
+
+.sidebar
+  float left
+  width: 30%
+
+  .widget
+    
+    /*
+    * Note the lack of vendor
+    * prefixes here. Nib will
+    * add them for us
+    */
+    border-radius 7px
+    border 1px solid #ccc
+    margin-left 20px
+    background-color background-color
+    box-shadow inset 0px 0px 0px 3px rgba(#fff, 0.8), 0px 3px 0px -2px rgba(#000, 0.1)
+
+    h1
+      font-family 'Quicksand'
+      margin 13px 10px 4px
+      padding-bottom 10px     
+      border-radius 2px 2px 0px 0px
+      margin-bottom 10px
+
+    p
+      font-size 16px
+      padding 0px 10px
+      margin-bottom 10px
+p
+  line-height 1.8
+
+footer
+  width 100%
+  height 170px
+  background-color #444
+  color #f9f9f9
+  margin 50px auto 0
+  border-top 1px dotted #ccc
+  padding-top 5px
+  font-size 16px
+footer p
+  float left
+  clear both
+  font-size 20px
+  color #ddd
+  text-shadow -1px -1px 0 #161616
+  padding 3em 0 0 2em
+footer p.right
+    float right
+    clear both
+    margin 0 30px 0 0 
