@@ -1,0 +1,33 @@
+!!!5
+html
+  head
+    meta(charset='utf-8')
+    title ${title} - Jade-Site
+    meta(name='description', content='NodeJS, Express, Jade, Stylus, Nib')
+    meta(name='author', content='Tony Brown')
+    // Mobile specific meta tags
+    meta(name='HandheldFriendly', content='true')
+    meta(name='MobileOptimized', content='320')
+    meta(name='viewport', content='width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1.0')
+    link(rel='stylesheet',href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.2.1/css/bootstrap.min.css")  
+    link(rel='stylesheet', href='css/style.css')
+    script(src='/javascripts/modernizr.js')
+    // Begin the page now
+  body
+    header.header
+      h1 Node and Jade Site
+    .container
+      .main-content
+        block content
+      .sidebar
+        block sidebar
+    footer
+    
+      p 
+        | Running on NodeJS with Express, Jade, Stylus and Nib!
+        | p.right Copyright &copy; 2013 All rights reserved
+
+
+    script(src='/javascripts/jquery.js')
+    script(src='/javascripts/underscore.js')
+    script(src='/javascripts/backbone.js')
